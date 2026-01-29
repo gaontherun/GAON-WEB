@@ -31,7 +31,7 @@ const Navbar = () => {
     ];
 
     return (
-        <nav className={`fixed z-50 transition-all duration-300 top-14 ${isMobile ? 'w-full max-w-[430px] left-1/2 -translate-x-1/2' : 'w-full left-0'} ${scrolled ? 'bg-dark-900/90 backdrop-blur-md py-4 shadow-lg' : 'bg-transparent py-6'}`}>
+        <nav className={`fixed z-50 transition-all duration-300 top-0 ${isMobile ? 'w-full max-w-[430px] left-1/2 -translate-x-1/2' : 'w-full left-0'} ${scrolled ? 'bg-dark-900/90 backdrop-blur-md py-4 shadow-lg' : 'bg-transparent py-6'}`}>
             <div className={`container mx-auto flex justify-between items-center ${isMobile ? 'px-3' : 'px-6'}`}>
                 <Link to="/" className="flex items-center gap-0 group">
                     <img src="/assets/logo.png" alt="Lim Gaon Logo" className="h-14 w-auto opacity-90 group-hover:opacity-100 transition-opacity" />

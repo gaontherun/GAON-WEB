@@ -15,7 +15,7 @@ const Home = () => {
             <div className="absolute top-0 right-0 w-1/2 h-full bg-red-900/5 blur-3xl rounded-full translate-x-1/2"></div>
 
             {/* Left Text Content */}
-            <div className={`relative z-20 flex flex-col justify-center items-end text-right px-6 ${!isMobile ? 'w-full md:w-1/2 h-full md:pr-32 lg:pr-40' : 'w-full h-auto pr-6 pb-12'}`}>
+            <div className={`relative z-20 flex flex-col justify-center items-end text-right px-6 ${!isMobile ? 'w-full md:w-1/2 h-full' : 'w-full h-auto pr-6 pb-12'}`}>
                 <motion.div
                     initial={{ opacity: 0, x: -50 }}
                     animate={{ opacity: 1, x: 0 }}
@@ -54,13 +54,13 @@ const Home = () => {
                 </motion.div>
             </div>
 
-            {/* Right Image Content - Overlapping */}
-            <div className={`relative z-10 flex items-center justify-start md:pl-0 ${!isMobile ? 'w-full md:w-1/2 h-[50vh] md:h-full' : 'w-full h-auto justify-center px-6'}`}>
+            {/* Right Image Content */}
+            <div className={`relative z-10 flex items-center justify-center ${!isMobile ? 'w-full md:w-1/2 h-[50vh] md:h-full' : 'w-full h-auto justify-center px-6'}`}>
                 <motion.div
                     initial={{ opacity: 0, x: 50, scale: 0.95 }}
                     animate={{ opacity: 1, x: 0, scale: 1 }}
                     transition={{ duration: 1, delay: 0.5 }}
-                    className={`relative shadow-2xl ${!isMobile ? 'md:-ml-12 lg:-ml-24 h-[80%] max-h-[700px] w-auto aspect-[3/4]' : 'w-full aspect-[3/4]'}`}
+                    className={`relative shadow-2xl ${!isMobile ? 'h-[80%] max-h-[700px] w-auto aspect-[3/4]' : 'w-full aspect-[3/4]'}`}
                 >
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent z-10"></div>
                     <img
