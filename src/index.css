@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scrollbar-gutter: stable;
+    overflow-y: scroll;
+    /* Added for consistent scrollbar presence */
+  }
+
+  body {
+    @apply bg-slate-900 text-white antialiased;
+  }
+}
