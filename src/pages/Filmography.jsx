@@ -7,6 +7,7 @@ const Filmography = () => {
     const { isMobile } = useViewMode();
 
     const films = [
+        { year: '2026', title: '단편 <Die Kraehe>', role: '주연 (no.15 역)', note: '아토믹 A.S.' },
         { year: '2026', title: '단편 <푸른 새벽>', role: '주연 (승우 역)', note: 'SXXX 영상워크숍' },
         { year: '2026', title: '장편 <자기애>', role: '주연 (상반기 크랭크인 예정)', note: '장XX 감독' },
     ];
